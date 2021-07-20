@@ -1,0 +1,24 @@
+{
+    "name": "config-manager/php",
+    "description": "config manager library in PHP",
+    "type": "library",
+    "require": {
+        "php": "^7.3.2",
+        "laravel/helpers": "^1.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "\\ConfigManager\\": "/src"
+        }
+    }
+}

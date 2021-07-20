@@ -1,0 +1,9 @@
+version: "2.0"
+services:
+  # PHP Application
+  app:
+    build: .
+    volumes:
+        - ./src/:/src
+    env_file: .env
+    # command: php test.php
